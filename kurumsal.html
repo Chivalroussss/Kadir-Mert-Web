@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadir Mert Kimdir? | Ankara Web Tasarım ve SEO Uzmanı</title>
+    <meta name="description"
+        content="Kadir Mert kimdir? Ankara'da profesyonel web tasarım ve SEO hizmetleri sunan dijital pazarlama uzmanı. Özgeçmiş ve vizyon.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 8rem 0 6rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            padding: 5rem 0;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .about-text h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            height: 3px;
+            background: var(--secondary-color);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        .skills-section {
+            background: #f8fafc;
+            padding: 5rem 0;
+        }
+
+        .skill-bar {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .progress-bg {
+            background: #e2e8f0;
+            height: 10px;
+            border-radius: 5px;
+        }
+
+        .progress-fill {
+            background: var(--secondary-color);
+            height: 100%;
+            border-radius: 5px;
+            width: 0;
+            transition: width 1.5s ease;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">KADIR<span>MERT</span></a>
+            <nav class="navbar">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="index.html#hizmetler">Hizmetler</a>
+                <a href="blog.html">Blog</a>
+                <a href="kurumsal.html" class="active">Kurumsal</a>
+                <a href="contact.html" class="btn-primary">Teklif Al</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>Kadir Mert Kimdir?</h1>
+            <p>Tutku, Teknoloji ve Strateji.</p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="about-grid">
+            <div class="about-img">
+                <!-- Using a placeholder professional image -->
+                <img src="assets/img/kadir-mert-profile.jpg" alt="Kadir Mert - Ankara Web Tasarım Uzmanı"
+                    style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+            <div class="about-text">
+                <h2>Merhaba, Ben Kadir Mert.</h2>
+                <p>Dijital dünyanın karmaşık labirentlerinde işletmelere rehberlik eden, sonuç odaklı bir <strong>Web
+                        Tasarım ve SEO Uzmanıyım.</strong></p>
+                <p>Kariyerim boyunca yüzlerce yerel ve ulusal markanın dijital dönüşümüne liderlik ettim. Standart
+                    şablonlar yerine, her işletmenin ruhuna uygun, özel kodlanmış ve **Google'ın sevdiği** web siteleri
+                    tasarlıyorum.</p>
+                <p><strong>Hedefim:</strong> Ankara başta olmak üzere Türkiye'nin dört bir yanındaki işletmeleri
+                    dijitalde hak ettikleri zirveye taşımak. Sadece bir web sitesi teslim etmiyor, sürdürülebilir bir
+                    dijital büyüme planı sunuyorum.</p>
+
+                <div style="margin-top: 2rem;">
+                    <a href="contact.html" class="btn-primary">İletişime Geçin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Uzmanlık Alanlarım</h2>
+                <p>Rakamlarla tecrübem.</p>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Web Tasarım (UI/UX)</span>
+                        <span>%98</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Teknik SEO</span>
+                        <span>%96</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Google Ads Yönetimi</span>
+                        <span>%92</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Sosyal Medya Stratejisi</span>
+                        <span>%89</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>KADIR MERT</h3>
+                <p>Kurumsal</p>
+            </div>
+            <div class="footer-col" style="text-align: right;">
+                <p><a href="index.html">Ana Sayfaya Dön</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

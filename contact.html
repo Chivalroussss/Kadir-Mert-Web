@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Kadir Mert Dijital Danışmanlık</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">KADIR<span>MERT</span></a>
+            <nav class="navbar">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="index.html#hizmetler">Hizmetler</a>
+                <a href="kurumsal.html">Kurumsal</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-padding" style="padding: 5rem 0; background: #f8fafc;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projeleriniz İçin Tanışalım</h2>
+                <p>Bir kahve içip işinizi nasıl büyütebileceğimizi konuşalım.</p>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label>Adınız Soyadınız</label>
+                    <input type="text" placeholder="Adınız">
+                </div>
+                <div class="form-group">
+                    <label>E-posta Adresiniz</label>
+                    <input type="email" placeholder="ornek@sirket.com">
+                </div>
+                <div class="form-group">
+                    <label>Proje Detayı</label>
+                    <textarea placeholder="Nasıl bir hizmet arıyorsunuz?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary"
+                    style="width: 100%; border:none; cursor:pointer;">Gönder</button>
+            </form>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p><strong>Email:</strong> kadirmett@outlook.com.tr</p>
+                <p><strong>Konum:</strong> Ankara, Türkiye</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

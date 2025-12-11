@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurumsal Web Tasarım Fiyatları | Kadir Mert Ankara Web Tasarım</title>
+    <meta name="description"
+        content="İşletmenizi yansıtan modern, mobil uyumlu ve hızlı kurumsal web sitesi tasarımları. Ankara web tasarım ajansı olarak uygun fiyatlı ve garantili çözümler sunuyoruz.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* Page Specific Styles */
+        .page-header {
+            background: var(--primary-color);
+            padding: 8rem 0 4rem;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .price-card {
+            background: var(--white);
+            border: 1px solid #e2e8f0;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .price-card.featured {
+            border-color: var(--secondary-color);
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .price-card.featured::after {
+            content: 'En Çok Tercih Edilen';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--secondary-color);
+            color: var(--white);
+            padding: 5px 15px;
+            font-size: 0.8rem;
+            border-radius: 20px;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-family: var(--font-heading);
+            color: var(--primary-color);
+            margin: 1.5rem 0;
+        }
+
+        .features-list li {
+            margin-bottom: 0.8rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Simplified Relative Paths) -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">KADIR<span>MERT</span></a>
+            <nav class="navbar">
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="../index.html#hizmetler" class="active">Hizmetler</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../kurumsal.html">Kurumsal</a>
+                <a href="../contact.html" class="btn-primary">Teklif Al</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Kurumsal Web Tasarım Çözümleri</h1>
+            <p>Rakiplerinizden sıyrılmanızı sağlayacak, %100 SEO uyumlu ve dönüşüm odaklı web siteleri.</p>
+        </div>
+    </section>
+
+    <section class="services section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Paketler ve Fiyatlar</h2>
+                <p>İhtiyacınıza en uygun çözümü seçin.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Startup -->
+                <div class="price-card">
+                    <h3>Başlangıç Paketi</h3>
+                    <div class="price">₺7.500</div>
+                    <ul class="features-list">
+                        <li>5 Sayfa Tasarım</li>
+                        <li>Mobil Uyumlu</li>
+                        <li>İletişim Formu</li>
+                        <li>Temel SEO Ayarları</li>
+                        <li>1 Yıl Ücretsiz Hosting</li>
+                    </ul>
+                    <a href="../contact.html" class="btn-secondary"
+                        style="color:var(--primary-color); border-color:var(--primary-color)">Seç</a>
+                </div>
+
+                <!-- Corporate -->
+                <div class="price-card featured">
+                    <h3>Kurumsal Paket</h3>
+                    <div class="price">₺15.000</div>
+                    <ul class="features-list">
+                        <li>Sınırsız Sayfa</li>
+                        <li>Özel Arayüz Tasarımı</li>
+                        <li>Gelişmiş SEO Modülasyonu</li>
+                        <li>Blog Altyapısı</li>
+                        <li>Google Harita Kaydı</li>
+                        <li>Kurumsal Mail Kurulumu</li>
+                    </ul>
+                    <a href="../contact.html" class="btn-primary">Seç</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>KADIR MERT</h3>
+                <p>Ankara Web Tasarım</p>
+            </div>
+            <div class="footer-col" style="text-align: right;">
+                <p><a href="../index.html">Ana Sayfaya Dön</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

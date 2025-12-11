@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Kadir Mert - Dijital Pazarlama İpuçları</title>
+    <meta name="description"
+        content="Web tasarım, SEO ve dijital pazarlama üzerine uzman görüşleri, rehberler ve ipuçları. İşletmenizi büyütmek için okuyun.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .blog-card {
+            background: var(--white);
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-img {
+            height: 200px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ccc;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+        }
+
+        .blog-meta {
+            font-size: 0.8rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .read-more {
+            color: var(--secondary-color);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">KADIR<span>MERT</span></a>
+            <nav class="navbar">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="index.html#hizmetler">Hizmetler</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="kurumsal.html">Kurumsal</a>
+                <a href="contact.html" class="btn-primary">Teklif Al</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header"
+        style="background: var(--primary-color); padding: 6rem 0; color: #fff; text-align: center;">
+        <div class="container">
+            <h1>Blog & İçgörüler</h1>
+            <p>Dijital dünyadaki rehberiniz.</p>
+        </div>
+    </section>
+
+    <section class="section-padding" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="blog-grid">
+
+                <!-- Article 1 -->
+                <article class="blog-card">
+                    <div class="blog-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">Web Tasarım • 5 Dk Okuma</div>
+                        <h3>Web Siteniz Sadece Bir Vitrin Değil, 7/24 Çalışan Satış Personelinizdir</h3>
+                        <p>Profesyonel tasarımın ciroya etkisi ve ilk izlenimin önemi.</p>
+                        <a href="posts/web-tasarim-ciro-etkisi.html" class="read-more">Devamını Oku →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="blog-card">
+                    <div class="blog-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">Teknik SEO • 4 Dk Okuma</div>
+                        <h3>Müşterileriniz Beklemeyi Sevmez: Site Hızı Satışları Nasıl Etkiler?</h3>
+                        <p>Hız ve SEO ilişkisi hakkında bilmeniz gerekenler.</p>
+                        <a href="posts/site-hizi-ve-seo.html" class="read-more">Devamını Oku →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="blog-card">
+                    <div class="blog-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">Strateji • 3 Dk Okuma</div>
+                        <h3>Web Sitenizin Yenilenme Zamanının Geldiğini Gösteren 5 İşaret</h3>
+                        <p>Modern web tasarım trendleri ve yenileme zamanı.</p>
+                        <a href="posts/web-sitesi-yenileme-zamani.html" class="read-more">Devamını Oku →</a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="blog-card">
+                    <div class="blog-img"
+                        style="background-image: url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">Yerel SEO • 6 Dk Okuma</div>
+                        <h3>İşletmenizi Şehrinizin Dijital Haritasına Nasıl Eklersiniz?</h3>
+                        <p>Yerel işletmeler için Loca SEO rehberi.</p>
+                        <a href="posts/yerel-seo-rehberi.html" class="read-more">Devamını Oku →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>KADIR MERT</h3>
+                <p>Blog</p>
+            </div>
+            <div class="footer-col" style="text-align: right;">
+                <p><a href="index.html">Ana Sayfaya Dön</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -63,18 +63,18 @@
                 <p>Bir kahve içip işinizi nasıl büyütebileceğimizi konuşalım.</p>
             </div>
 
-            <form class="contact-form">
+            <form class="contact-form" action="mailto:kadirmertt@outlook.com.tr" method="post" enctype="text/plain">
                 <div class="form-group">
                     <label>Adınız Soyadınız</label>
-                    <input type="text" placeholder="Adınız">
+                    <input type="text" name="name" placeholder="Adınız" required>
                 </div>
                 <div class="form-group">
                     <label>E-posta Adresiniz</label>
-                    <input type="email" placeholder="ornek@sirket.com">
+                    <input type="email" name="email" placeholder="ornek@sirket.com" required>
                 </div>
                 <div class="form-group">
                     <label>Proje Detayı</label>
-                    <textarea placeholder="Nasıl bir hizmet arıyorsunuz?"></textarea>
+                    <textarea name="message" placeholder="Nasıl bir hizmet arıyorsunuz?"></textarea>
                 </div>
                 <button type="submit" class="btn-primary"
                     style="width: 100%; border:none; cursor:pointer;">Gönder</button>

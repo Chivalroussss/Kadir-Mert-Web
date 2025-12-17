@@ -49,13 +49,14 @@
 
         .about-text p {
             margin-bottom: 1.5rem;
-            color: #555;
+            color: var(--text-secondary);
             font-size: 1.05rem;
         }
 
         .skills-section {
-            background: #f8fafc;
+            background: var(--bg-secondary);
             padding: 5rem 0;
+            transition: background 0.3s ease;
         }
 
         .skill-bar {
@@ -93,6 +94,19 @@
 
 <body>
 
+    <!-- Top Bar Status -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Kontrol ediliyor...</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">KADIR<span>MERT</span></a>
@@ -102,85 +116,110 @@
                 <a href="blog.html">Blog</a>
                 <a href="kurumsal.html" class="active">Kurumsal</a>
                 <a href="contact.html" class="btn-primary">Teklif Al</a>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
             </nav>
         </div>
     </header>
 
-    <section class="about-hero">
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background: var(--primary-color); padding: 5rem 0; color: #fff; text-align: center;">
         <div class="container">
-            <h1>Kadir Mert Kimdir?</h1>
-            <p>Tutku, Teknoloji ve Strateji.</p>
+            <h1>Kurumsal</h1>
+            <p>Hakkımızda, Ekibimiz ve Referanslarımız</p>
         </div>
     </section>
 
-    <section class="container">
-        <div class="about-grid">
-            <div class="about-img">
-                <!-- Using a placeholder professional image -->
-                <img src="assets/img/kadir-mert-profile.jpg" alt="Kadir Mert - Ankara Web Tasarım Uzmanı"
-                    style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-            </div>
-            <div class="about-text">
-                <h2>Merhaba, Ben Kadir Mert.</h2>
-                <p>Dijital dünyanın karmaşık labirentlerinde işletmelere rehberlik eden, sonuç odaklı bir <strong>Web
-                        Tasarım ve SEO Uzmanıyım.</strong></p>
-                <p>Kariyerim boyunca yüzlerce yerel ve ulusal markanın dijital dönüşümüne liderlik ettim. Standart
-                    şablonlar yerine, her işletmenin ruhuna uygun, özel kodlanmış ve **Google'ın sevdiği** web siteleri
-                    tasarlıyorum.</p>
-                <p><strong>Hedefim:</strong> Ankara başta olmak üzere Türkiye'nin dört bir yanındaki işletmeleri
-                    dijitalde hak ettikleri zirveye taşımak. Sadece bir web sitesi teslim etmiyor, sürdürülebilir bir
-                    dijital büyüme planı sunuyorum.</p>
+    <!-- Kadir Mert Kimdir & Reference Style Text -->
+    <section class="section-padding" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="about-grid" style="align-items: flex-start;">
+                <div class="about-img">
+                    <!-- Using the user uploaded image if available or placeholder -->
+                    <img src="assets/img/kadir-mert-profile.jpg" alt="Kadir Mert - Ankara Web Tasarım"
+                        style="border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                </div>
+                <div class="about-text">
+                    <h2>Kadir Mert Kimdir?</h2>
+                    <p>Yılların tercübesine sahip <strong>Kadir Mert</strong>, Ankara'da profesyonel olarak web tasarım
+                        ajansı hizmeti vermektedir. Ankara'da bir çok seçkin kurumsal firmanın tercih ettiği web tasarım
+                        firmasının kurucusudur.</p>
 
-                <div style="margin-top: 2rem;">
-                    <a href="contact.html" class="btn-primary">İletişime Geçin</a>
+                    <p>Ankara Web Tasarım hizmetiyle birlikte firmaların ihtiyacı olan Google arama sonuçlarında ilk
+                        sayfada ilk sıralarda çıkabilmelerini sağlayan <strong>SEO Hizmeti</strong>’ni Ankara’nın en iyi
+                        SEO Uzmanı olarak sunmaktadır.</p>
+
+                    <p>Kadir Mert Dijital Pazarlama konusunda da firmalara danışmanlık hizmeti sunmaktadır. Sosyal medya
+                        hesap yönetimi, sponsorlu reklamlar ve Google AdWords hesap yönetimi de yapmaktadır.</p>
+
+                    <div
+                        style="margin-top: 2rem; padding: 1.5rem; background: #f8fafc; border-left: 4px solid var(--secondary-color); border-radius: 4px;">
+                        <h4 style="margin-bottom: 0.5rem; color: var(--primary-color);">Vizyonumuz</h4>
+                        <p style="margin-bottom: 0; font-size: 0.95rem;">Dijital dünyada iz bırakmak isteyen her
+                            markaya, en son teknolojiyi ve en etkili stratejileri sunarak rehberlik etmek.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills-section">
+    <!-- Team Section -->
+    <section class="team-section" style="background: #f1f5f9; padding: 5rem 0;">
         <div class="container">
             <div class="section-title">
-                <h2>Uzmanlık Alanlarım</h2>
-                <p>Rakamlarla tecrübem.</p>
+                <h2>Ekibimiz</h2>
+                <p>Başarımızın arkasındaki güç.</p>
             </div>
-            <div style="max-width: 800px; margin: 0 auto;">
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span>Web Tasarım (UI/UX)</span>
-                        <span>%95</span>
+            <div class="services-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 800px; margin: 0 auto;">
+                <!-- Reusing grid layout -->
+                <!-- Team Member 1 -->
+                <div class="service-card" style="text-align: center;">
+                    <div
+                        style="width: 100px; height: 100px; background: #ddd; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden;">
+                        <img src="https://via.placeholder.com/100?text=KM" alt="Kadir Mert">
                     </div>
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 95%"></div>
-                    </div>
+                    <h3>Kadir Mert</h3>
+                    <p style="color: var(--secondary-color); font-weight: 600; margin-bottom: 0.5rem;">Kurucu & SEO
+                        Uzmanı</p>
+                    <p style="font-size: 0.9rem;">Strateji geliştirme ve proje yönetimi.</p>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span>Teknik SEO</span>
-                        <span>%90</span>
+                <!-- Team Member 2 -->
+                <div class="service-card" style="text-align: center;">
+                    <div
+                        style="width: 100px; height: 100px; background: #ddd; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden;">
+                        <img src="https://via.placeholder.com/100?text=VO" alt="Vedat Ölmez">
                     </div>
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 90%"></div>
-                    </div>
+                    <h3>Vedat Ölmez</h3>
+                    <p style="color: var(--secondary-color); font-weight: 600; margin-bottom: 0.5rem;">Web Tasarımcı &
+                        SEO Uzmanı
+                    </p>
+                    <p style="font-size: 0.9rem;">Web tasarım ve SEO optimizasyonu.</p>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span>Google Ads Yönetimi</span>
-                        <span>%95</span>
-                    </div>
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 95%"></div>
-                    </div>
-                </div>
-                <div class="skill-bar">
-                    <div class="skill-info">
-                        <span>Sosyal Medya Stratejisi</span>
-                        <span>%90</span>
-                    </div>
-                    <div class="progress-bg">
-                        <div class="progress-fill" style="width: 90%"></div>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section class="references-section" style="padding: 5rem 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Referanslar</h2>
+                <p>Bizimle çalışan mutlu müşteriler.</p>
+            </div>
+            <div class="references-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 2rem; align-items: center;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+1" alt="Referans 1"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+2" alt="Referans 2"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+3" alt="Referans 3"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+4" alt="Referans 4"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+5" alt="Referans 5"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+6" alt="Referans 6"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s;">
             </div>
         </div>
     </section>
@@ -196,6 +235,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <span class="search-close">&times;</span>
+        <form class="search-form">
+            <input type="text" placeholder="Site içinde ara...">
+        </form>
+    </div>
 
 </body>
 

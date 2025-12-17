@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .blog-grid {
             display: grid;
@@ -20,8 +21,8 @@
         }
 
         .blog-card {
-            background: var(--white);
-            border: 1px solid #eee;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: 10px;
             overflow: hidden;
             transition: var(--transition);
@@ -29,16 +30,16 @@
 
         .blog-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--card-shadow);
         }
 
         .blog-img {
             height: 200px;
-            background: #eee;
+            background: var(--bg-secondary);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ccc;
+            color: var(--text-secondary);
             background-size: cover;
             background-position: center;
         }
@@ -49,7 +50,7 @@
 
         .blog-meta {
             font-size: 0.8rem;
-            color: #888;
+            color: var(--text-secondary);
             margin-bottom: 0.5rem;
         }
 
@@ -57,6 +58,11 @@
             font-size: 1.25rem;
             margin-bottom: 1rem;
             line-height: 1.4;
+            color: var(--text-primary);
+        }
+
+        .blog-card p {
+            color: var(--text-secondary);
         }
 
         .read-more {
@@ -66,20 +72,54 @@
             font-size: 0.8rem;
             letter-spacing: 1px;
         }
+
+        .section-padding {
+            background: var(--bg-primary);
+            transition: background 0.3s ease;
+        }
     </style>
 </head>
 
 <body>
+
+    <!-- Top Bar Status -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Kontrol ediliyor...</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
 
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">KADIR<span>MERT</span></a>
             <nav class="navbar">
                 <a href="index.html">Ana Sayfa</a>
-                <a href="index.html#hizmetler">Hizmetler</a>
+
+                <div class="dropdown">
+                    <a href="#">Hizmetler <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#hizmetler">Hizmetlerimiz</a>
+                        <a href="referanslar.html">Referanslarımız</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="kadir-mert-kimdir.html">Kadir Mert Kimdir?</a>
+                        <a href="ekibimiz.html">Ekibimiz</a>
+                    </div>
+                </div>
+
                 <a href="blog.html" class="active">Blog</a>
-                <a href="kurumsal.html">Kurumsal</a>
                 <a href="contact.html" class="btn-primary">Teklif Al</a>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
             </nav>
         </div>
     </header>
@@ -165,6 +205,15 @@
         </div>
     </footer>
 
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <span class="search-close">&times;</span>
+        <form class="search-form">
+            <input type="text" placeholder="Site içinde ara...">
+        </form>
+    </div>
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

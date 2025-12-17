@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Web Tasarım | Kadir Mert</title>
+    <meta name="description"
+        content="Dünyanın en popüler içerik yönetim sistemi WordPress ile kolay yönetilebilir, esnek ve güçlü web siteleri oluşturuyoruz.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(10, 15, 30, 0.8), rgba(10, 15, 30, 0.8)), url('https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding: 10rem 0 6rem;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .content-section {
+            padding: 5rem 0;
+            background: var(--light-bg);
+        }
+
+        .content-block {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+
+        .content-block h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .content-block p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: #0073aa;
+            /* WordPress Blue */
+            margin-bottom: 1rem;
+        }
+
+        .cta-box {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 3rem;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 3rem;
+        }
+
+        .cta-box h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">KADIR<span>MERT</span></a>
+            <nav class="navbar">
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="../index.html#hizmetler">Hizmetler</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../contact.html" class="btn-primary">Teklif Al</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>WordPress Web Tasarım</h1>
+            <p>Esnek, Güçlü ve Kolay Yönetilebilir</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <!-- Nedir? -->
+            <div class="content-block">
+                <h2>WordPress Nedir?</h2>
+                <p>WordPress, dünyadaki web sitelerinin %40'ından fazlasının altyapısını oluşturan, açık kaynaklı ve son
+                    derece güçlü bir İçerik Yönetim Sistemidir (CMS). Başlangıçta bloglar için üretilmiş olsa da, bugün
+                    e-ticaret sitelerinden kurumsal şirket sayfalarına kadar her türlü web sitesi için en popüler
+                    çözümdür.</p>
+            </div>
+
+            <!-- Ne Katarız? -->
+            <div class="content-block">
+                <h2>Neden WordPress Tercih Etmelisiniz?</h2>
+                <p>Kadir Mert Dijital Danışmanlık olarak, WordPress altyapısını profesyonelce kuruyor ve işletmenize
+                    özel hale getiriyoruz.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-edit"></i>
+                        <h3>Kolay Yönetim Paneli</h3>
+                        <p>Kod bilmenize gerek kalmadan sitenizi güncelleyebilir, yeni içerikler ve blog yazıları
+                            ekleyebilirsiniz.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-plug"></i>
+                        <h3>Geniş Eklenti Desteği</h3>
+                        <p>Binlerce eklenti desteği ile sitenize istediğiniz her türlü özelliği (form, galeri, SEO
+                            araçları) kolayca entegre edebiliriz.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fab fa-google"></i>
+                        <h3>Google Dostu</h3>
+                        <p>WordPress, arama motorları tarafından çok sevilir. SEO başarısı için mükemmel bir teknik
+                            altyapı sunar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bizim Farkımız -->
+            <div class="content-block">
+                <h2>Bizim Farkımız Ne?</h2>
+                <p>Biz sadece bir tema kurup bırakmıyoruz. Sitenizi hızlandırıyor, güvenlik önlemlerini alıyor ve
+                    tamamen sizin ihtiyaçlarınıza göre optimize ediyoruz. Premium temalar ve lisanslı eklentilerle
+                    profesyonel bir sonuç sunuyoruz.</p>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-box">
+                <h3>WordPress ile Hemen Başlayalım</h3>
+                <p>İşletmenizin kontrolü sizin elinizde olsun istiyorsanız, WordPress çözümlerimiz tam size göre.</p>
+                <br>
+                <a href="../contact.html" class="btn-secondary"
+                    style="background: white; color: var(--primary-color);">Detaylı Bilgi Alın</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>KADIR MERT</h3>
+                <p>Web Tasarım ve WordPress Uzmanı</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Erişim</h4>
+                <ul>
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="web-tasarim.html">Web Tasarım</a></li>
+                    <li><a href="wordpress-web-tasarim.html">WordPress</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kadir Mert. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

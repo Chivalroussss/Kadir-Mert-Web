@@ -29,6 +29,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/homepage-overhaul.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -66,17 +68,45 @@
 
 <body>
 
+    <!-- Top Bar Status -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Kontrol ediliyor...</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">KADIR<span>MERT</span></a>
             <nav class="navbar">
                 <a href="index.html" class="active">Ana Sayfa</a>
-                <a href="#hizmetler">Hizmetler</a>
-                <a href="#hakkimda">Hakkımda</a>
+
+                <div class="dropdown">
+                    <a href="#">Hizmetler <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#hizmetler">Hizmetlerimiz</a>
+                        <a href="referanslar.html">Referanslarımız</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="kadir-mert-kimdir.html">Kadir Mert Kimdir?</a>
+                        <a href="ekibimiz.html">Ekibimiz</a>
+                    </div>
+                </div>
+
                 <a href="blog.html">Blog</a>
-                <a href="kurumsal.html">Kurumsal</a>
                 <a href="contact.html" class="btn-primary">Teklif Al</a>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
             </nav>
             <div class="mobile-toggle">
                 <span></span>
@@ -102,55 +132,420 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="hizmetler" class="services">
+    <!-- Stats Section -->
+    <section class="stats-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Hizmetlerimiz</h2>
-                <p>Sonuç odaklı dijital çözümler sunuyoruz.</p>
-            </div>
-            <div class="services-grid">
-                <!-- Service 1 -->
-                <div class="service-card">
-                    <div class="icon">💻</div>
-                    <h3>Kurumsal Web Tasarım</h3>
-                    <p>Mobil uyumlu, hızlı ve kullanıcı deneyimi (UX) odaklı modern web siteleri.</p>
-                    <a href="hizmetler/kurumsal-web-tasarim.html" class="learn-more">İncele →</a>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Yapılan Site Sayısı</span>
                 </div>
-                <!-- Service 2 -->
-                <div class="service-card">
-                    <div class="icon">🚀</div>
-                    <h3>SEO Danışmanlığı</h3>
-                    <p>Google'da üst sıralara çıkarak organik trafiğinizi ve satışlarınızı artırın.</p>
-                    <a href="hizmetler/seo-danismanligi.html" class="learn-more">İncele →</a>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                    <span class="stat-number">100+</span>
+                    <span class="stat-label">SEO Yapılan Site</span>
                 </div>
-                <!-- Service 3 -->
-                <div class="service-card">
-                    <div class="icon">📢</div>
-                    <h3>Sosyal Medya Yönetimi</h3>
-                    <p>Marka bilinirliğinizi artıracak yaratıcı içerik ve reklam stratejileri.</p>
-                    <a href="hizmetler/sosyal-medya-yonetimi.html" class="learn-more">İncele →</a>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                    <span class="stat-number">%100</span>
+                    <span class="stat-label">Müşteri Memnuniyeti</span>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                    <span class="stat-number">7+</span>
+                    <span class="stat-label">Yıllık Tecrübe</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About/CTA Section -->
-    <section id="hakkimda" class="about-cta">
+    <!-- Web Design Detail Section -->
+    <section class="detail-section">
         <div class="container">
-            <div class="about-content">
-                <h2>Neden Kadir Mert?</h2>
-                <p>Sadece "güzel" görünen siteler değil, <strong>iş yapan ve kazandıran</strong> dijital varlıklar
-                    üretiyorum. Kıdemli SEO uzmanlığı ve modern tasarım vizyonunu birleştirerek rakiplerinizin önüne
-                    geçmenizi sağlıyorum.</p>
-                <ul class="features">
-                    <li>✅ %100 SEO Uyumlu Kodlama</li>
-                    <li>✅ Mobil Öncelikli Tasarım</li>
-                    <li>✅ 7/24 Teknik Destek</li>
-                </ul>
-                <a href="contact.html" class="btn-primary">Hemen Tanışalım</a>
+            <div class="detail-grid">
+                <div class="detail-text">
+                    <h5 class="section-subtitle">WEB TASARIM</h5>
+                    <h2>Kurumsal Kimliğinizi Yansıtan Profesyonel Çözümler</h2>
+                    <p>Ankara Web Tasarım Firması arayanların istediklerini karşılamak için kalite ve
+                        profesyonelliğimizden ödün vermeden çalışıyoruz.</p>
+
+                    <ul class="feature-list">
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-drafting-compass"></i></div>
+                            <div class="feature-text">
+                                <h4>Web Tasarım Ajansı</h4>
+                                <p>Firmanız için Profesyonel Web Tasarım hizmeti veriyoruz.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="feature-text">
+                                <h4>İnternet Sitesi Yapıyoruz</h4>
+                                <p>Siz ve firmanız için size değer katan web siteleri yapıyoruz.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i class="fas fa-sitemap"></i></div>
+                            <div class="feature-text">
+                                <h4>Özel Tasarım</h4>
+                                <p>İstekleriniz doğrultusunda size özel web tasarım yapıyoruz.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Web Tasarım Masası">
+                    <div class="img-badge">
+                        <i class="fas fa-check-circle"></i> %100 Memnuniyet
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Web Software Section -->
+    <section class="detail-section alt-bg">
+        <div class="container">
+            <div class="detail-grid">
+                <div class="detail-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="SEO Strateji">
+                </div>
+                <div class="detail-text">
+                    <div class="detail-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h5 class="section-subtitle">WEB YAZILIM</h5>
+                    <h2>Özel Çözümler &amp; Güçlü Altyapı</h2>
+                    <p style="margin-bottom:1rem;">Özel yazılım web sitesi isteyenler için</p>
+                    <p>Hazır ve klişe web tasarım tasarım istemeyenler için size ve firmanıza özel web yazılım
+                        yapıyoruz. Bu konuda Ankara web yazılım firmaları arasında daha kaliteli ve hızlı çözümler
+                        üretiyoruz.</p>
+                    <br>
+                    <a href="contact.html" class="btn-primary">Detaylı Bilgi <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colorful Services Grid -->
+    <section class="colorful-grid-section" id="hizmetler">
+        <div class="colorful-grid">
+            <!-- Row 1 -->
+            <a href="hizmetler/web-tasarim.html" class="colorful-card card-1">
+                <div class="card-content">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Tasarım</span>
+                </div>
+                <div class="card-overlay"></div>
+            </a>
+            <a href="hizmetler/wordpress-web-tasarim.html" class="colorful-card card-2">
+                <div class="card-content">
+                    <i class="fab fa-wordpress"></i>
+                    <span>WordPress Web Tasarım</span>
+                </div>
+                <div class="card-overlay"></div>
+            </a>
+            <a href="hizmetler/web-yazilim.html" class="colorful-card card-3">
+                <div class="card-content">
+                    <i class="fas fa-code"></i>
+                    <span>Web Yazılım</span>
+                </div>
+                <div class="card-overlay"></div>
+            </a>
+            <a href="hizmetler/ozel-internet-sitesi.html" class="colorful-card card-4">
+                <div class="card-content">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Özel İnternet Sitesi</span>
+                </div>
+                <div class="card-overlay"></div>
+            </a>
+            <!-- Row 2 -->
+            <a href="hizmetler/e-ticaret-sitesi.html" class="colorful-card card-5">
+                <div class="card-content">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>E-Ticaret Sitesi</span>
+                </div>
+                <div class="card-overlay"></div>
+            </a>
+            <a href="hizmetler/seo.html" class="colorful-card card-6">
+                <div class="card-content">
+                    <i class="fas fa-search-location"></i>
+                    <span>SEO</span>
+                </div>
+                <div class="card-overlay"></div>
+            </a>
+            <a href="hizmetler/sosyal-medya.html" class="colorful-card card-7">
+                <div class="card-content">
+                    <i class="fas fa-share-alt"></i>
+                    <span>Sosyal Medya</span>
+                </div>
+                <div class="card-overlay"></div>
+            </a>
+            <a href="hizmetler/adwords.html" class="colorful-card card-8">
+                <div class="card-content">
+                    <i class="fab fa-google"></i>
+                    <span>AdWords</span>
+                </div>
+                <div class="card-overlay"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Reporting & Analysis -->
+    <section class="analysis-section">
+        <div class="container">
+            <!-- Part 1: Reporting -->
+            <div class="analysis-grid">
+                <div class="analysis-img">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Web Site Raporlama">
+                </div>
+                <div class="analysis-text">
+                    <h2>Web Site Raporlama</h2>
+                    <p>Web sitenizi oluşan trafiği size aylık raporlar halinde sunuyoruz.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Google Analytics</li>
+                        <li><i class="fas fa-check"></i> Google Search Console</li>
+                        <li><i class="fas fa-check"></i> Statcounter</li>
+                        <li><i class="fas fa-check"></i> Ziyaretçi İstatistikleri</li>
+                        <li><i class="fas fa-check"></i> Rakip Analizleri</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Part 2: Social Media -->
+            <div class="analysis-grid reverse">
+                <div class="analysis-text">
+                    <h2>Sosyal Medya Analizi</h2>
+                    <p>Markanızın sosyal medya hesaplarıyla ilgili analizleri sizin için değerlendiriyoruz.</p>
+                    <br>
+                    <a href="contact.html" class="btn-primary" style="background:#3b5998; border-radius:5px;">BİZE
+                        ULAŞIN →</a>
+                </div>
+                <div class="analysis-img">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                        alt="Sosyal Medya Analizi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials-section" style="padding: 5rem 0; background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Müşteri Yorumları</h2>
+                <p>Mutlu müşterilerimizin deneyimleri</p>
+            </div>
+
+            <div class="testimonials-carousel"
+                style="position: relative; max-width: 800px; margin: 3rem auto; padding: 0 60px;">
+
+                <!-- Carousel Container -->
+                <div class="carousel-container" style="overflow: hidden; border-radius: 15px;">
+                    <div class="carousel-track" style="display: flex; transition: transform 0.5s ease;">
+
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide"
+                            style="min-width: 100%; background: var(--card-bg); padding: 3rem; box-shadow: var(--card-shadow);">
+                            <div class="stars"
+                                style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
+                                ★★★★★
+                            </div>
+                            <p
+                                style="color: var(--text-secondary); font-style: italic; margin-bottom: 2rem; line-height: 1.8; text-align: center; font-size: 1.1rem;">
+                                "Kadir Mert ile çalışmak harika bir deneyimdi. Web sitemiz modern, hızlı ve SEO uyumlu
+                                oldu.
+                                Müşteri memnuniyetimiz %40 arttı. Kesinlikle tavsiye ederim!"
+                            </p>
+                            <div class="testimonial-author"
+                                style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                                <img src="assets/img/testimonial-1.png" alt="Mehmet Yılmaz"
+                                    style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div style="text-align: left;">
+                                    <h4 style="margin: 0; color: var(--text-primary); font-size: 1.1rem;">Mehmet Yılmaz
+                                    </h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Genel Müdür
+                                        - 3N
+                                        Mobilya</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide"
+                            style="min-width: 100%; background: var(--card-bg); padding: 3rem; box-shadow: var(--card-shadow);">
+                            <div class="stars"
+                                style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
+                                ★★★★★
+                            </div>
+                            <p
+                                style="color: var(--text-secondary); font-style: italic; margin-bottom: 2rem; line-height: 1.8; text-align: center; font-size: 1.1rem;">
+                                "Profesyonel yaklaşım ve kaliteli hizmet. SEO çalışmaları sayesinde Google'da ilk
+                                sayfaya
+                                çıktık. Organik trafiğimiz 3 kat arttı. Teşekkürler!"
+                            </p>
+                            <div class="testimonial-author"
+                                style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                                <img src="assets/img/testimonial-2.png" alt="Ayşe Demir"
+                                    style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div style="text-align: left;">
+                                    <h4 style="margin: 0; color: var(--text-primary); font-size: 1.1rem;">Ayşe Demir
+                                    </h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Pazarlama
+                                        Müdürü -
+                                        Eryaman Dekorasyon</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide"
+                            style="min-width: 100%; background: var(--card-bg); padding: 3rem; box-shadow: var(--card-shadow);">
+                            <div class="stars"
+                                style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
+                                ★★★★★
+                            </div>
+                            <p
+                                style="color: var(--text-secondary); font-style: italic; margin-bottom: 2rem; line-height: 1.8; text-align: center; font-size: 1.1rem;">
+                                "E-ticaret sitemiz için mükemmel bir çözüm sundular. Kullanıcı dostu arayüz ve hızlı
+                                yükleme
+                                süreleri. Satışlarımız ilk ayda %50 arttı!"
+                            </p>
+                            <div class="testimonial-author"
+                                style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                                <img src="assets/img/testimonial-3.png" alt="Can Öztürk"
+                                    style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div style="text-align: left;">
+                                    <h4 style="margin: 0; color: var(--text-primary); font-size: 1.1rem;">Can Öztürk
+                                    </h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">Kurucu -
+                                        TechStore
+                                        Ankara</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-slide"
+                            style="min-width: 100%; background: var(--card-bg); padding: 3rem; box-shadow: var(--card-shadow);">
+                            <div class="stars"
+                                style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
+                                ★★★★★
+                            </div>
+                            <p
+                                style="color: var(--text-secondary); font-style: italic; margin-bottom: 2rem; line-height: 1.8; text-align: center; font-size: 1.1rem;">
+                                "Sosyal medya yönetimi ve Google Ads kampanyalarımız çok başarılı geçti. ROI'miz
+                                beklentilerimizin üzerinde. Uzman bir ekip!"
+                            </p>
+                            <div class="testimonial-author"
+                                style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                                <img src="https://ui-avatars.com/api/?name=Zeynep+Kaya&background=0D8ABC&color=fff&size=60"
+                                    alt="Zeynep Kaya"
+                                    style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div style="text-align: left;">
+                                    <h4 style="margin: 0; color: var(--text-primary); font-size: 1.1rem;">Zeynep Kaya
+                                    </h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">İşletme
+                                        Sahibi -
+                                        Kaya Güzellik Salonu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="testimonial-slide"
+                            style="min-width: 100%; background: var(--card-bg); padding: 3rem; box-shadow: var(--card-shadow);">
+                            <div class="stars"
+                                style="color: #fbbf24; font-size: 1.5rem; margin-bottom: 1.5rem; text-align: center;">
+                                ★★★★★
+                            </div>
+                            <p
+                                style="color: var(--text-secondary); font-style: italic; margin-bottom: 2rem; line-height: 1.8; text-align: center; font-size: 1.1rem;">
+                                "Kurumsal web sitemiz için aldığımız hizmet mükemmeldi. Hem tasarım hem de teknik
+                                altyapı
+                                konusunda çok profesyoneller. Çok memnunuz!"
+                            </p>
+                            <div class="testimonial-author"
+                                style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                                <img src="https://ui-avatars.com/api/?name=Burak+Arslan&background=10b981&color=fff&size=60"
+                                    alt="Burak Arslan"
+                                    style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                                <div style="text-align: left;">
+                                    <h4 style="margin: 0; color: var(--text-primary); font-size: 1.1rem;">Burak Arslan
+                                    </h4>
+                                    <p style="margin: 0; color: var(--text-secondary); font-size: 0.9rem;">CEO - Arslan
+                                        Danışmanlık</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="carousel-prev" onclick="moveCarousel(-1)"
+                    style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: var(--card-bg); border: 2px solid var(--border-color); width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--text-primary); transition: all 0.3s ease; z-index: 10;">
+                    ‹
+                </button>
+                <button class="carousel-next" onclick="moveCarousel(1)"
+                    style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: var(--card-bg); border: 2px solid var(--border-color); width: 50px; height: 50px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: var(--text-primary); transition: all 0.3s ease; z-index: 10;">
+                    ›
+                </button>
+
+                <!-- Dots Indicator -->
+                <div class="carousel-dots" style="display: flex; justify-content: center; gap: 10px; margin-top: 2rem;">
+                    <span class="dot active" onclick="goToSlide(0)"
+                        style="width: 12px; height: 12px; border-radius: 50%; background: var(--secondary-color); cursor: pointer; transition: all 0.3s ease;"></span>
+                    <span class="dot" onclick="goToSlide(1)"
+                        style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color); cursor: pointer; transition: all 0.3s ease;"></span>
+                    <span class="dot" onclick="goToSlide(2)"
+                        style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color); cursor: pointer; transition: all 0.3s ease;"></span>
+                    <span class="dot" onclick="goToSlide(3)"
+                        style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color); cursor: pointer; transition: all 0.3s ease;"></span>
+                    <span class="dot" onclick="goToSlide(4)"
+                        style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color); cursor: pointer; transition: all 0.3s ease;"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section for Homepage -->
+    <section class="references-section" style="padding: 5rem 0; background:#f8fafc;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Referanslarımız</h2>
+                <p>Güvenilir İş Ortaklarımız</p>
+            </div>
+            <div class="references-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 2rem; align-items: center;">
+                <img src="assets/img/3n-mobilya-logo.png" alt="3N Mobilya"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s; padding: 10px; background:#fff; border-radius:5px;">
+                <img src="assets/img/eryaman-dekorasyon-logo.png" alt="Eryaman Dekorasyon"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s; padding: 10px; background:#fff; border-radius:5px;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+3" alt="Referans 3"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s; padding: 10px; background:#fff; border-radius:5px;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+4" alt="Referans 4"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s; padding: 10px; background:#fff; border-radius:5px;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+5" alt="Referans 5"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s; padding: 10px; background:#fff; border-radius:5px;">
+                <img src="https://via.placeholder.com/150x80?text=Logo+6" alt="Referans 6"
+                    style="opacity: 0.7; filter: grayscale(100%); transition: all 0.3s; padding: 10px; background:#fff; border-radius:5px;">
+            </div>
+            <div style="text-align:center; margin-top:3rem;">
+                <a href="referanslar.html" class="btn-secondary"
+                    style="color:var(--primary-color); border-color:var(--primary-color);">Tüm Referansları Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" style="padding:0;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195884.3004300762!2d32.62268159846067!3d39.90303935293427!2m3!1f0!2f0!3f0!3m2!1f0!2f0!3f0!3m2!1sen!2str!4v1626076547145!5m2!1sen!2str"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <!-- Footer -->
@@ -180,7 +575,16 @@
         </div>
     </footer>
 
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <span class="search-close">&times;</span>
+        <form class="search-form">
+            <input type="text" placeholder="Site içinde ara...">
+        </form>
+    </div>
+
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/carousel.js"></script>
 </body>
 
 </html>

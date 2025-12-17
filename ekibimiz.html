@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekibimiz | Kadir Mert Dijital Danışmanlık</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .team-section {
+            background: var(--bg-secondary) !important;
+            transition: background 0.3s ease;
+        }
+
+        .page-header h1 {
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar Status -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Kontrol ediliyor...</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">KADIR<span>MERT</span></a>
+            <nav class="navbar">
+                <a href="index.html">Ana Sayfa</a>
+
+                <div class="dropdown">
+                    <a href="#">Hizmetler <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#hizmetler">Hizmetlerimiz</a>
+                        <a href="referanslar.html">Referanslarımız</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="active">Kurumsal <i class="fas fa-chevron-down"
+                            style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="kadir-mert-kimdir.html">Kadir Mert Kimdir?</a>
+                        <a href="ekibimiz.html">Ekibimiz</a>
+                    </div>
+                </div>
+
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="btn-primary">Teklif Al</a>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </nav>
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background: var(--primary-color); padding: 5rem 0; color: #fff; text-align: center;">
+        <div class="container">
+            <h1>Ekibimiz</h1>
+            <p>Başarımızın arkasındaki uzman kadro.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" style="background: #f1f5f9; padding: 5rem 0;">
+        <div class="container">
+            <div class="services-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 800px; margin: 0 auto;">
+                <!-- Reusing grid layout -->
+                <!-- Team Member 1 -->
+                <div class="service-card" style="text-align: center;">
+                    <div
+                        style="width: 100px; height: 100px; background: #ddd; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden;">
+                        <img src="https://via.placeholder.com/100?text=KM" alt="Kadir Mert">
+                    </div>
+                    <h3>Kadir Mert</h3>
+                    <p style="color: var(--secondary-color); font-weight: 600; margin-bottom: 0.5rem;">Kurucu & SEO
+                        Uzmanı</p>
+                    <p style="font-size: 0.9rem;">Strateji geliştirme ve proje yönetimi.</p>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="service-card" style="text-align: center;">
+                    <div
+                        style="width: 100px; height: 100px; background: #ddd; border-radius: 50%; margin: 0 auto 1rem; overflow: hidden;">
+                        <img src="https://via.placeholder.com/100?text=VO" alt="Vedat Ölmez">
+                    </div>
+                    <h3>Vedat Ölmez</h3>
+                    <p style="color: var(--secondary-color); font-weight: 600; margin-bottom: 0.5rem;">Web Tasarımcı &
+                        SEO Uzmanı
+                    </p>
+                    <p style="font-size: 0.9rem;">Web tasarım ve SEO optimizasyonu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>KADIR MERT</h3>
+                <p>Ekibimiz</p>
+            </div>
+            <div class="footer-col" style="text-align: right;">
+                <p><a href="index.html">Ana Sayfaya Dön</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <span class="search-close">&times;</span>
+        <form class="search-form">
+            <input type="text" placeholder="Site içinde ara...">
+        </form>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

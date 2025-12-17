@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Yazılım Çözümleri | Kadir Mert</title>
+    <meta name="description"
+        content="İşletmenizin ihtiyaçlarına özel, güvenli ve ölçeklenebilir web yazılım çözümleri. CRM, ERP entegrasyonları, B2B/B2C sistemler.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(10, 15, 30, 0.9), rgba(10, 15, 30, 0.9)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            padding: 10rem 0 6rem;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .content-section {
+            padding: 5rem 0;
+            background: var(--light-bg);
+        }
+
+        .content-block {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+
+        .content-block h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .content-block p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            background: #f8fafc;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-item i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .cta-box {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 3rem;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 3rem;
+        }
+
+        .cta-box h3 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">KADIR<span>MERT</span></a>
+            <nav class="navbar">
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="../index.html#hizmetler">Hizmetler</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../contact.html" class="btn-primary">Teklif Al</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Web Yazılım</h1>
+            <p>Standartların Ötesinde, Size Özel Çözümler</p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <!-- Nedir? -->
+            <div class="content-block">
+                <h2>Web Yazılım Nedir?</h2>
+                <p>Web yazılım, hazır paket programların veya standart web sitelerinin yetersiz kaldığı durumlarda
+                    devreye giren, işletmenizin özel iş akışlarına ve ihtiyaçlarına göre kodlanan dijital sistemlerdir.
+                    Bir personel takip sistemi, online rezervasyon altyapısı, bayi yönetim paneli veya size özel bir
+                    e-ticaret modeli olabilir.</p>
+            </div>
+
+            <!-- Ne Katarız? -->
+            <div class="content-block">
+                <h2>Özel Yazılımın Avantajları</h2>
+                <p>İşinizi yazılıma uydurmak yerine, yazılımı işinize uyduruyoruz.</p>
+
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-lock"></i>
+                        <h3>Yüksek Güvenlik</h3>
+                        <p>Size özel kapalı devre sistemler ile verileriniz güvende. Açık kaynak kodlu sistemlere göre
+                            saldırılara karşı daha dirençli.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                        <h3>Tam Ölçülebilirlik</h3>
+                        <p>İşletmeniz büyüdükçe yazılımınız da büyür. İleride ihtiyaç duyacağınız yeni modülleri sisteme
+                            kolayca entegre edebiliriz.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Maksimum Performans</h3>
+                        <p>Gereksiz kod yığınlarından arındırılmış, sadece ihtiyacınız olanı çalıştıran saf ve hızlı bir
+                            yapı.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Neler Yapıyoruz? -->
+            <div class="content-block">
+                <h2>Neler Geliştiriyoruz?</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle"
+                            style="color: green; margin-right: 10px;"></i> B2B / B2C Bayi Yönetim Sistemleri</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle"
+                            style="color: green; margin-right: 10px;"></i> Online Randevu ve Rezervasyon Sistemleri</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle"
+                            style="color: green; margin-right: 10px;"></i> Özel E-Ticaret Platformları</li>
+                    <li style="margin-bottom: 10px;"><i class="fas fa-check-circle"
+                            style="color: green; margin-right: 10px;"></i> API Entegrasyonları (Muhasebe, Kargo vb.)
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CTA -->
+            <div class="cta-box">
+                <h3>Projenizi Anlatın, Kodlayalım</h3>
+                <p>Aklınızdaki projeyi hayata geçirmek için teknik ekibimizle görüşün.</p>
+                <br>
+                <a href="../contact.html" class="btn-secondary"
+                    style="background: white; color: var(--primary-color);">Proje Teklifi Al</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h3>KADIR MERT</h3>
+                <p>Özel Web Yazılım Çözümleri</p>
+            </div>
+            <div class="footer-col">
+                <h4>Hızlı Erişim</h4>
+                <ul>
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="web-yazilim.html">Web Yazılım</a></li>
+                    <li><a href="ozel-internet-sitesi.html">Özel Projeler</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kadir Mert. Tüm Hakları Saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

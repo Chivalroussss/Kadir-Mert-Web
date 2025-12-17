@@ -9,14 +9,16 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .contact-form {
             max-width: 600px;
             margin: 0 auto;
-            background: #fff;
+            background: var(--card-bg);
             padding: 2rem;
             border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: var(--card-shadow);
+            transition: background 0.3s ease;
         }
 
         .form-group {
@@ -27,15 +29,19 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 600;
+            color: var(--text-primary);
         }
 
         .form-group input,
         .form-group textarea {
             width: 100%;
             padding: 1rem;
-            border: 1px solid #ddd;
+            border: 1px solid var(--border-color);
             border-radius: 5px;
             font-family: inherit;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.3s ease;
         }
 
         .form-group textarea {
@@ -45,13 +51,44 @@
 </head>
 
 <body>
+
+    <!-- Top Bar Status -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">Kontrol ediliyor...</span>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">KADIR<span>MERT</span></a>
             <nav class="navbar">
                 <a href="index.html">Ana Sayfa</a>
-                <a href="index.html#hizmetler">Hizmetler</a>
-                <a href="kurumsal.html">Kurumsal</a>
+
+                <div class="dropdown">
+                    <a href="#">Hizmetler <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#hizmetler">Hizmetlerimiz</a>
+                        <a href="referanslar.html">Referanslarımız</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">Kurumsal <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="kadir-mert-kimdir.html">Kadir Mert Kimdir?</a>
+                        <a href="ekibimiz.html">Ekibimiz</a>
+                    </div>
+                </div>
+
+                <a href="blog.html">Blog</a>
+                <a href="contact.html" class="btn-primary">Teklif Al</a>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
             </nav>
         </div>
     </header>
@@ -83,9 +120,26 @@
             <div style="text-align: center; margin-top: 3rem;">
                 <p><strong>Email:</strong> kadirmett@outlook.com.tr</p>
                 <p><strong>Konum:</strong> Ankara, Türkiye</p>
+
+                <div class="map-container"
+                    style="margin-top: 2rem; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d195884.3004300762!2d32.62268159846067!3d39.90303935293427!2m3!1f0!2f0!3f0!3m2!1f0!2f0!3f0!3m2!1sen!2str!4v1626076547145!5m2!1sen!2str"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
     </section>
-</body>
+
+    <!-- Search Modal -->
+    <div class="search-modal">
+        <span class="search-close">&times;</span>
+        <form class="search-form">
+            <input type="text" placeholder="Site içinde ara...">
+        </form>
+    </div>
+
+    <script src="assets/js/main.js"></script>
 
 </html>
